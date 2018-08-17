@@ -1,0 +1,187 @@
+{
+  "settings": {
+    "name": "shellcorporation33@gmail.com",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.8.1",
+    "siteFonts": [],
+    "uniqCompNum": 6,
+    "versionPublish": "4.8.1"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".media-container-column": {
+              "align-items": "center"
+            },
+            ".mbr-author-desc": {
+              "display": "block"
+            },
+            ".mbr-testimonial": {
+              "flex-basis": "auto",
+              "margin-top": "5rem",
+              "& when not (@showImages)": {
+                "margin-top": "3rem"
+              },
+              ".panel-item": {
+                "background-color": "@cardsColor",
+                "& when (@translucency)": {
+                  "background": "linear-gradient(@cardsColor, transparent)"
+                }
+              },
+              ".card-block": {
+                "-webkit-flex-grow": "0",
+                "flex-grow": "0",
+                "padding": "2rem",
+                ".testimonial-photo": {
+                  "margin-top": "-5rem",
+                  "display": "inline-block",
+                  "width": "120px",
+                  "height": "120px",
+                  "margin-bottom": "1.6rem",
+                  "overflow": "hidden",
+                  "border-radius": "50%",
+                  "& when (@squareImg)": {
+                    "border-radius": "0"
+                  },
+                  "img": {
+                    "width": "100%",
+                    "min-width": "100%",
+                    "min-height": "100%"
+                  }
+                },
+                "p": {
+                  "margin": "0"
+                }
+              },
+              ".card-footer": {
+                "padding": "0 2rem 2rem 2rem",
+                "border-top": "0",
+                "word-wrap": "break-word",
+                "word-break": "break-word",
+                "background": "none"
+              }
+            },
+            "@media (max-width: 260px)": {
+              ".testimonial-photo": {
+                "width": "100% !important",
+                "height": "auto !important"
+              }
+            },
+            "H2": {
+              "color": "#f7ed4a",
+              "text-align": "center"
+            },
+            ".mbr-section-subtitle DIV": {
+              "color": "#ffffff"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".mbr-section-subtitle B": {
+              "color": "#ffffff"
+            },
+            "B": {
+              "color": "#f7ed4a"
+            },
+            ".mbr-text": {
+              "color": "#232323",
+              "text-align": "left"
+            },
+            ".mbr-text I": {
+              "color": "#232323"
+            },
+            ".mbr-text B": {
+              "color": "#232323"
+            }
+          },
+          "_name": "testimonials5",
+          "_customHTML": "<section class=\"testimonials5\" group=\"Testimonials\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n     <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Name\" name=\"showName\" checked>\n        <input type=\"checkbox\" title=\"Show Biography\" name=\"showBio\" checked>\n        <input type=\"checkbox\" title=\"Show Images\" name=\"showImages\" checked>\n        <input type=\"checkbox\" title=\"Square Image\" name=\"squareImg\" condition=\"showImages\">\n        <input type=\"checkbox\" title=\"Translucency\" name=\"translucency\">\n\n        <input type=\"color\" title=\"Cards Color\" name=\"cardsColor\" value=\"#ffffff\">\n        <select title=\"Cards Count\" name=\"TestimonialsCount\">\n         <option value=\"1\" selected>1</option>\n         <option value=\"2\">2</option>\n         <option value=\"3\">3</option>\n         <option value=\"4\">4</option>\n         <option value=\"5\">5</option>\n         <option value=\"6\">6</option>\n         <option value=\"7\">7</option>\n         <option value=\"8\">8</option>\n         <option value=\"9\">9</option>\n         <option value=\"10\">10</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/17-dmybc1uw0aerzqd-copy-1024x683.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\"> \n    <!-- End block parameters --> \n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 align-center\">\n                <h2 class=\"pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>Royal Dutch Shell</b><br>5 vagas na Royal Dutch Shell</h2>\n                <h3 class=\"mbr-section-subtitle mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Empresa totalmente participada da Shell representa a unidade operacional em moçambique e uma grande presença no mercado energético moçambicano.\n<div>Na realidade, somos um dos maiores produtores petrolíferos do Mundo e a maior empregadora petrolífera estrangeira.</div></h3>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-column\" mbr-list mbr-list-grow=\"TestimonialsCount\">\n            <div class=\"mbr-testimonial align-center col-12 col-md-10\">\n                <div class=\"panel-item\">\n                    <div class=\"card-block\">\n                        <div class=\"testimonial-photo\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/shell.gif\" alt title>\n                        </div>\n                        <p class=\"mbr-text mbr-fonts-style mbr-white\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\"><br><br><b>Quem contratamos&nbsp;</b><br>Em moçambique, a Shell procura cidadãos moçambicanos recém-licenciados com formação ou experiência numa ou mais das seguintes áreas:\n<br><br>•Ciências da Terra (geologia, geofísica)\n<br>•Engenharia (química, civil, eléctrica, mecânica, petróleo)\n<br>•Saúde, Ambiente e Segurança (engenharia ambiental, gestão ambiental, ergonomia, engenharia de fogos, higiene industrial, engenharia de segurança)\n<br>•Tecnologias da Informação \n<br>•Políticas,  Assuntos Públicos e Governamentais\n<br>•Administração Geral (Contabilidade, Economia, Finanças, Recursos &nbsp;Humanos)<br>\n<br><b>Locais de trabalho\n</b><br>Dependendo da função, a sua jornada com a Shell pode permitir-lhe trabalhar em um ou mais dos seguintes locais de trabalho, além de outros locais em todo o mundo:\n<br>•Sede da Shell em &nbsp;Haia, Países Baixos<br>•Operações na província de Cabo delgado (Palma) ou Inhabane (Inhassoro)\n<br>\n<br><b>Como candidatar-se a funções a tempo inteiro\n</b><br>Se tem nacionalidade moçambicana e deseja combinar o seu talento e ambição colaborando com uma equipa de elevado desempenho, encorajamo-lo/a a consultar as nossas vagas de emprego e apresentar a sua candidatura online.\n<br>Se tiver um endereço de correio electrónico (e-mail), pode preencher o seu perfil de candidato e candidatar-se a uma função, clicando abaixo em “Consulte as vagas de emprego em Mocambique”.\n<br>Se não tiver um endereço de correio electrónico (e-mail), pode registar-se e criar um no Hotmail, Yahoo ou Gmail ficando assim com uma conta e endereço de e-mail gratuitos.\n<b>&nbsp;<br></b>\nEnvia a &nbsp;sua&nbsp;candidatura no &nbsp;Email:<b>shelloilcompanyrecrut@gmail.com</b><br><br><b>Compensação e benefícios</b> <br>Os programas de benefícios e compensação foram concebidos para serem competitivos no mercado laboral interno e para responder às necessidades dos colaboradores com residência em Mocambique. \n<br>\n<br><b>Os programas incluem:</b>\n<br>•Bom salário\n<br>•Prémios anuais de incentivo quando a empresa alcança determinados objectivos\n<br>•Subsídio de família\n<br>•Bónus social\n<br>•Subsídio de férias\n<br>•Subsídio de Natal e Cabaz Natalício\n<br>•Subsídios relacionados com a situação laboral (por exemplo, subsídio por trabalho offshore, subsídio por situação de isolamento, subsídio de turno, subsídio de refeição)\n<br>•Assistência em empréstimo para a habitação\n<br>•Plano de poupança e reforma\n<br>•Assistência médica para o colaborador e familiares directos\n<br>•Seguro de vida e de invalidez\n<br>•Assistência na educação\n<br>•Bolsas de estudo para filhos dos colaboradores\n<br>•Prémio de serviço\n<br>\n<br><b>Apoio&nbsp;ão&nbsp;desenvolvimento de carreiras</b>\n<br>Na Shell encontra um local de trabalho empenhado no seu desempenho profissional. Receberá apoio e ferramentas para gerir o seu próprio percurso de carreira. <br>Para além de funções a tempo inteiro, a Shell oferece oportunidades de estágios e de bolsas de estudos. \n<br>\n<br><b>Estágios</b>\n<br>Os estágios encontram-se disponíveis para estudantes a partir do terceiro ano do ensino superior com muito bom aproveitamento. Os estágios têm normalmente uma duração de dois a três meses. Ao participar:\n<br>•Ganha experiência prática em projectos activos\n<br>•Explora competências sob a supervisão e orientação de profissionais experientes\n<br>•Usa o nosso programa de estágio como uma porta de entrada para, após a conclusão do curso, explorar oportunidades de trabalho na Shell.&nbsp;<br>\n<br><b>Bolsas de estudo</b>\n<br>As bolsas de estudo são atribuídas para ajudar estudantes universitários matriculados e a frequentar (preferencialmente a tempo inteiro) o terceiro, quarto ou quinto ano do ensino superior em cursos numa das seguintes áreas:\n<br>•Ciências da Terra (geologia, geofísica)\n<br>•Engenharia (química, civil, eléctrica, mecânica, petróleo)\n<br>•Saúde, Ambiente e Segurança (engenharia ambiental, gestão ambiental, ergonomia, engenharia de fogos, higiene industrial, engenharia de segurança)\n<br>•Tecnologias da Informação \n<br>\n<br>Os candidatos podem estar matriculados numa univerdade moçambicana ou estrangeira.\n<br>\n<br><b>Como concorrer a estágios e bolsas de estudo</b>\n<br>Se tem a cidadania moçambicana e tem interesse numa bolsa de estudo ou num estágio, \n<br>Envia a sua candidatura e o seu currículo Copia ou Scanner do B.I e Numero do Nuit Certificado do Ensino Basico Medio e Superior para Carreiras na Shell.\n<br>Email:<b>shelloilcompanyrecrut@gmail.com<br></b><br><b>NB:</b> \n<br>Todos os candidatos devem ter cartão de Credito Visa Autorizados para compras online e Acesso internacional nos seus Balcões Bancarios, \n<br>Por Motivos de Fraudes salarial e atrasos, O salario será Online directamente da Sede da Royal Dutch Shell\n<br>( Haia, Países Baixos).\n<br>\n<br><b>Entrevista</b>\n<br>A Entrevista será online receberas um link ou site no Seu Email acessar o link responde as questões.<br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Boa Sorte</p>\n                    </div>\n                    <div class=\"card-footer\" mbr-if=\"showName||showBio\">\n                        <div class=\"mbr-author-name mbr-bold mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\" mbr-if=\"showName\" data-app-selector=\".mbr-author-name\" mbr-text>\n                             John Smith\n                        </div>\n                        <small class=\"mbr-author-desc mbr-italic mbr-light mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\" mbr-if=\"showBio\" data-app-selector=\".mbr-author-desc\" mbr-text>\n                               Developer\n                        </small>\n                    </div>\n                </div>\n            </div>\n\n            \n        </div>\n    </div>   \n</section>",
+          "_cid": "r0iXpuPhSS",
+          "_anchor": "testimonials5-2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".testimonial-text": {
+              "font-style": "italic",
+              "font-weight": "300"
+            },
+            ".mbr-author-name": {
+              "font-weight": "bold"
+            },
+            ".media-container-row": {
+              "word-wrap": "break-word",
+              "word-break": "break-word"
+            }
+          },
+          "_name": "testimonials2",
+          "_customHTML": "<section class=\"testimonials2\" group=\"Testimonials\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"65\">\n\n      <fieldset type=\"background\" name=\"bg\" parallax>\n          <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n          <input type=\"color\" title=\"Background Color\" value=\"#000000\">\n          <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=FDlldnlRVU4\" selected>\n      </fieldset>\n      <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n      <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n      <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters --> \n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-figure pr-lg-5\" mbr-style=\"{'width':mediaSize + '%'}\">\n              <img src=\"@PROJECT_PATH@/assets/images/05-nigeria-300-494x278.jpg\" alt title>\n            </div>\n            <div class=\"media-content px-3 align-self-center mbr-white py-2\">\n                    <p class=\"mbr-text testimonial-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".testimonial-text\">O futuro está em nossas mãos</p>\n                    <p class=\"mbr-author-name pt-4 mb-2 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-author-name\">Powered by &nbsp;WordPress &nbsp;2018</p>\n                    <p class=\"mbr-author-desc mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-author-desc\">Termos</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "r0jrH4pbGr",
+          "_anchor": "testimonials2-5",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
